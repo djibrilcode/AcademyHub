@@ -1,0 +1,43 @@
+/* Styles for StudentList component */
+
+.studentlist-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(16,24,40,0.06);
+}
+
+.studentlist-title {
+  margin: 0 0 12px 0;
+  font-size: 1.6rem;
+  color: #1f2937;
+  text-align: left;
+}
+
+.addstudent-wrapper {
+  margin-bottom: 14px;
+}
+
+.students-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.student-item {
+  /* Each Student currently renders a table; keep spacing */
+  width: 100%;
+}
+
+/* Small adjustments for mobile */
+@media (max-width: 600px) {
+  .studentlist-container {
+    margin: 12px;
+    padding: 10px;
+  }
+  .studentlist-title {
+    font-size: 1.2rem;
+  }
+}
